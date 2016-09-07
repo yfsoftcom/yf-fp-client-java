@@ -15,8 +15,6 @@ public class AETest {
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
 
-//        AE.me().init("e1953c5ff0ad9f5e","6c627b2c6388ab9e12cf36057e319870").setMode(AE.MODE_PRODUCT);
-
 //        AE.me().init("08d7b0fa132b2880","6026a8e2264e94f8b8dcb57a7b428d6d").setDefaultDevHost("http://192.168.1.115:8080").setMode(AE.MODE_DEV);
 
         AE.me().init("a81bc1bb16bc23bb","3fc4c39d3e59b33b67bcbc359d31e7ee").setMode(AE.MODE_STAGING);
