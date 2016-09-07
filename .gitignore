@@ -1,0 +1,14 @@
+lib-cov
+*.seed
+*.log.*
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.log
+
+out/
+target/
+.idea
