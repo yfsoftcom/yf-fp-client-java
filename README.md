@@ -38,7 +38,7 @@
 
 ```java
 //初始化
-AE.me().init("a81bc1bb16bc23bb","3fc4c39d3e59b33b67bcbc359d31e7ee").setMode(AE.MODE_STAGING);
+AE.me().init("http://localhost:9991", "123123", "3fc4c39d3e59b33b67bcbc359d31e7ee");
 AEClient _client = new AEClient("common.test",new AEParam().set("uid",5).set("中文","001467249347566"));
 AERspType result = null;
 try {
