@@ -14,7 +14,7 @@ public class AETest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
-        AE.me().init("http://localhost:9991", "123123", "3fc4c39d3e59b33b67bcbc359d31e7ee");
+        AE.me().init("http://localhost:9999", "123123", "3fc4c39d3e59b33b67bcbc359d31e7ee");
     }
 
 
@@ -33,14 +33,14 @@ public class AETest {
     @Test
     public void testSign(){
 
-        AEClient _client = new AEClient("version.check",new AEParam().set("uid",5).set("中文","001467249347566"));
+        AEClient _client = new AEClient("test.foo",new AEParam().set("uid",5).set("中文","001467249347566"));
         AERspType result = null;
         try {
             result = _client.call();
             System.out.println(result.toString());
             JSONObject jo = JSONObject.parseObject(result.toString());
             System.out.println("errno should be 0");
-            Assert.assertTrue("0".equals(jo.getString("errno")));
+            Assert.assertTrue("-3001".equals(jo.getString("errno")));
         } catch (IOException e) {
             e.printStackTrace();
         }
